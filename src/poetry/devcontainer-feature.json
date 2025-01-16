@@ -1,0 +1,18 @@
+{
+    "name": "Poetry",
+    "id": "poetry",
+    "version": "1.0.0",
+    "description": "Installs poetry, using the official poetry installer.",
+    "options": {
+        "poetry_home": {
+            "type": "string",
+            "default": "",
+            "description": "Path where poetry should be installed."
+        },
+        "poetry_version": {
+            "type": "string",
+            "default": "1.8.5",
+            "description": "Poetry version to install."
+        }
+    }
+}
