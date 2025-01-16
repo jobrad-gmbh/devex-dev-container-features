@@ -6,7 +6,7 @@
     "options": {
         "poetry_home": {
             "type": "string",
-            "default": "",
+            "default": "/opt/poetry",
             "description": "Path where poetry should be installed."
         },
         "poetry_version": {
