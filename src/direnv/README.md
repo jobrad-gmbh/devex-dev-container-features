@@ -1,38 +1,24 @@
-# direnv Dev Container Feature
 
-📁 Installs direnv and sets up hooks
+# direnv (direnv)
 
-<!--<p align=center>
-  <img width=400 src=https://i.imgur.com/7On7iXn.png>
-</p>-->
+direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
 
-## Usage
+## Example Usage
 
-```jsonc
-// devcontainer.json
-{
-  "features": {
-    "ghcr.io/devcontainers-community/features/direnv": {}
-  }
+```json
+"features": {
+    "ghcr.io/jobrad-gmbh/devex-dev-container-features/direnv:1": {}
 }
 ```
 
-❓ Don't know what this ☝ means? Check out [this VS Code blog post].
+## Options
 
-### Options
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| version | Select the version to install. | string | latest |
 
-You can set `version` to one of `latest`, `system`, or `N.N.N` to pin a specific version:
 
-```jsonc
-// devcontainer.json
-{
-  "features": {
-    "ghcr.io/devcontainers-community/features/direnv": {
-      "version": "1.0.0"
-    }
-  }
-}
-```
 
-<!-- prettier-ignore -->
-[this vs code blog post]: https://code.visualstudio.com/blogs/2022/09/15/dev-container-features
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/jobrad-gmbh/devex-dev-container-features/blob/main/src/direnv/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
