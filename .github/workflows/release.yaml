@@ -39,5 +39,6 @@ jobs:
           # Push
           if [ "$NO_UPDATES" != "true" ] ; then
               git push origin "$branch"
+              sleep 2
               gh pr create --title "$message" --body "$message"
           fi
