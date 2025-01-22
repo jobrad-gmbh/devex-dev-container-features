@@ -1,0 +1,26 @@
+# General settings
+general_settings:
+  default_branch: main
+  allow_update_branch: true
+  allow_auto_merge: true
+  delete_branch_on_merge: true
+  allow_merge_commit: false
+  has_issues: false
+  has_wiki: false
+  has_projects: false
+  has_discussions: false
+
+# Branch protection rules
+protection_rules:
+  protected_branches:
+    - main
+  required_checks:
+    - build-image
+    - check / build
+    - test / build
+    - format / build
+  allow_deletions: false
+  require_code_owner_reviews: true
+  required_approving_review_count: 1
+  allow_force_pushes: false
+  required_linear_history: true
