@@ -16,3 +16,10 @@ fi
 if [ -f "/etc/zsh/zshrc" ]; then
     echo -e 'eval "$(direnv hook zsh)"' >> /etc/zsh/zshrc
 fi
+
+mkdir -p $XDG_CONFIG_HOME/direnv
+cat >$XDG_CONFIG_HOME/direnv/direnv.toml <<EOL
+[whitelist]
+prefix = [ "/" ]
+EOL
+
