@@ -1,0 +1,36 @@
+// See the JSON reference of dev containers here: https://containers.dev/implementors/json_reference/
+{
+  "name": "devex-dev-container-features-ide",
+  "image" : "debian:sid-slim",
+  // Arguments passed to the docker run command
+  "runArgs": [
+    "--name=devex-dev-container-features-ide"
+  ],
+  // The workspace path within the container. The local project folder will be automatically bind mounted there
+  "workspaceFolder": "/workspace",
+  // Additional mounts. Volumes, or bind mounts
+  "mounts": [
+    {
+      // Mount the local gitconfig to use aliases and git configuration within the container
+      "source": "${localEnv:HOME}/.gitconfig",
+      "target": "/root/.gitconfig",
+      "type": "bind"
+    },
+    {
+      // Persist the dev container IDE configuration in a volume so that it is not lost when the dev container is recreated
+      "source": "devex-dev-container-features-jetbrains-data",
+      "target": "/.jbdevcontainer/config/JetBrains",
+      "type": "volume"
+    }
+  ],
+  /*
+  Features are tools that are not part of the production image but needed for the inner or outer development loop.
+  These are installed on container creation as additional layers.
+  */
+  "features": {
+    "ghcr.io/devcontainers/features/git:latest": {
+      "ppa": "true",
+      "version": "os-provided"
+    }
+  }
+}
