@@ -1,7 +1,7 @@
 {
     "name": "Poetry",
     "id": "poetry",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Installs poetry, using the official poetry installer.",
     "options": {
         "poetry_home": {
@@ -11,7 +11,7 @@
         },
         "poetry_version": {
             "type": "string",
-            "default": "1.8.5",
+            "default": "",
             "description": "Poetry version to install."
         }
     }
