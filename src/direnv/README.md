@@ -7,7 +7,7 @@ direnv is an extension for your shell. It augments existing shells with a new fe
 
 ```json
 "features": {
-    "ghcr.io/jobrad-gmbh/devex-dev-container-features/direnv:1": {}
+    "ghcr.io/jobrad-gmbh/devex-dev-container-features/direnv:2": {}
 }
 ```
 
