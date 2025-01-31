@@ -16,7 +16,7 @@ Installs poetry, using the official poetry installer.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | poetry_home | Path where poetry should be installed. | string | /opt/poetry |
-| poetry_version | Poetry version to install. | string | 1.8.5 |
+| poetry_version | Poetry version to install. | string | - |
 
 
 
